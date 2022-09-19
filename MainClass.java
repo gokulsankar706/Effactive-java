@@ -1,6 +1,9 @@
 //$Id$
 package Cooks;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+
 public class MainClass {
 	
 	public static void main(String[] args) {
@@ -31,10 +34,14 @@ public class MainClass {
 		System.out.println(theMobile);
 		
 		//composition
-		System.out.println("\nComposition");
-		ClassesAndInterfaces CI =  new ClassesAndInterfaces();
-		CI.callA();
-		CI.callB();
+		System.out.println("\nComposition \n");
+		ClassesAndInterfaces ci =  new ClassesAndInterfaces();
+		ci.createUser("gokul", 821232423, "23/1/2009", 89976748);
+		ArrayList<Composition> userDetails = ci.getUsers();
+		Iterator<Composition> itr = userDetails.iterator();
+		while(itr.hasNext()) {
+			System.out.println(itr.next());
+		}
 
 	}
 
