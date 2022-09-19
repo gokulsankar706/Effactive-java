@@ -1,5 +1,6 @@
 //$Id$
 package Cooks;
+
 public class MainClass {
 	
 	public static void main(String[] args) {
@@ -29,6 +30,12 @@ public class MainClass {
 		BuilderPattern theMobile = Obj5.setBattery(123).setOS("Mac").setRam(8).getMobile();
 		System.out.println(theMobile);
 		
+		//composition
+		System.out.println("\nComposition");
+		ClassesAndInterfaces CI =  new ClassesAndInterfaces();
+		CI.callA();
+		CI.callB();
+
 	}
 
 }
