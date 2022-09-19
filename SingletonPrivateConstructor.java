@@ -2,7 +2,7 @@
 package Cooks;
 
 public class SingletonPrivateConstructor {
-	    
+		
 	    private static final SingletonPrivateConstructor Obj = new SingletonPrivateConstructor();
 	    
 	    private int number;
@@ -15,6 +15,13 @@ public class SingletonPrivateConstructor {
 	    }
 	    public void setString(String str){
 	        this.string = str;
+	    }
+	    
+	    public String getString(){
+	        return this.string;
+	    }
+	    public int getNumber(){
+	        return this.number;
 	    }
 	    
 	    public static SingletonPrivateConstructor getInstance(){
