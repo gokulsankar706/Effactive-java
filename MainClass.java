@@ -1,9 +1,9 @@
 //$Id$
 package Cooks;
 public class MainClass {
-
+	
 	public static void main(String[] args) {
-		
+				
 		//Singleton Using private constuctor
 		SingletonPrivateConstructor Obj = SingletonPrivateConstructor.getInstance();
 		System.out.println(Obj.toString());
@@ -11,13 +11,16 @@ public class MainClass {
 		
 		//Singleton Using Enum
 		SingletonENUM Obj2 = SingletonENUM.INSTANCE;
-		Obj2.setNumber(123);
-		System.out.println(Obj2);
+		SingletonENUM Objj = SingletonENUM.INSTANCE;
+		Obj2.setNumber(123); 
+		Objj.setNumber(123333);
+		System.out.println(Obj2.hashCode()+"\n"+Objj.hashCode()+"\nObject One \n"+Obj2+"\nObject Two \n"+Objj);
 		System.out.println("\nStatic factory method");
 				
 		//Static factory method
 		Staticfactory Obj3 = Staticfactory.setValues("gokul", 12, 87.6f);
-		System.out.println(Obj3);
+		Staticfactory Objt = Staticfactory.setValues("ss", 322, 8327.6f);
+		System.out.println(Obj3.hashCode()+"\n"+Objt.hashCode());
 		System.out.println("\nBuilder pattern");
 		
 		//Builder pattern
