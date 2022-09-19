@@ -3,7 +3,6 @@ package Cooks;
 
 public enum SingletonENUM {
 	INSTANCE;
-    
     private int number;
     private String string;
     
