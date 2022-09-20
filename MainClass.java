@@ -43,6 +43,14 @@ public class MainClass {
 			System.out.println(itr.next());
 		}
 
+		//Abstract Interface or Skeletal Implementation
+		System.out.println("\nAbstract Interface or Skeletal Implementation \n");
+		Animal lion =  new Lion();
+		Animal cat = new Cat();
+		
+		lion.callMe();
+		System.out.println();
+		cat.callMe();
 	}
 
 }
