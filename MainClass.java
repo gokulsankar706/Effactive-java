@@ -6,7 +6,7 @@ import java.util.Iterator;
 
 public class MainClass {
 	
-	public static void main(String[] args) {
+	public static <N> void main(String[] args) {
 				
 		//Singleton Using private constuctor
 		SingletonPrivateConstructor Obj = SingletonPrivateConstructor.getInstance();
@@ -23,8 +23,9 @@ public class MainClass {
 				
 		//Static factory method
 		Staticfactory Obj3 = Staticfactory.setValues("gokul", 12, 87.6f);
-		Staticfactory Objt = Staticfactory.setValues("ss", 322, 8327.6f);
+		Staticfactory Objt = Staticfactory.setValues("ss", 322, 8327.6f).setName("gulu gulu");
 		System.out.println(Obj3.hashCode()+"\n"+Objt.hashCode());
+		System.out.println(Objt);
 		System.out.println("\nBuilder pattern");
 		
 		//Builder pattern
@@ -51,6 +52,15 @@ public class MainClass {
 		lion.callMe();
 		System.out.println();
 		cat.callMe();
+		
+		//Generics 
+		Generics<Integer> g = new Generics<Integer>();
+		g.add(1);
+		g.add(5);
+		g.add(6);
+		g.print();
+		
 	}
 
+	
 }
