@@ -46,8 +46,8 @@ public class MainClass {
 
 		//Abstract Interface or Skeletal Implementation
 		System.out.println("\nAbstract Interface or Skeletal Implementation \n");
-		Animal lion =  new Lion();
-		Animal cat = new Cat();
+		Animal lion =  new Lion();  //Refer object by their Interfaces	
+		Animal cat = new Cat(); 
 		
 		lion.callMe();
 		System.out.println();
@@ -59,6 +59,7 @@ public class MainClass {
 		g.add(5);
 		g.add(6);
 		g.print();
+
 		
 	}
 
