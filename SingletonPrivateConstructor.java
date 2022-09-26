@@ -2,10 +2,9 @@
 package Cooks;
 
 public class SingletonPrivateConstructor {
-		
-	    private static final SingletonPrivateConstructor Obj = new SingletonPrivateConstructor();
+		private static final SingletonPrivateConstructor Obj = new SingletonPrivateConstructor();
 	    
-	    private int number;
+		private int number;
 	    private String string;
 	  
 	    private SingletonPrivateConstructor(){}
@@ -27,7 +26,6 @@ public class SingletonPrivateConstructor {
 	    public static SingletonPrivateConstructor getInstance(){
 	         return Obj;
 	    }
-	    
 	    
 	    @Override
 	    public String toString() {

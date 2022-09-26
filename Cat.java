@@ -19,7 +19,7 @@ public class Cat extends CatFamily{
 	}
 
 	public void callMe() {
-		System.out.println("I am "+Animal.cat);
+		System.out.println("I am "+Animal.animals.cat);
 		family();
 		home();
 		food();

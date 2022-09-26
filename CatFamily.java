@@ -9,4 +9,6 @@ public abstract class CatFamily implements Animal {
 	public void family() {
 		System.out.println("I am from cat family...");
 	}
+	
 }
+ 

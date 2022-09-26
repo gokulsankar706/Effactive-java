@@ -7,7 +7,7 @@ public class Lion extends CatFamily{
 		System.out.println("I am only eat non-veg...");
 	}
 
-	@Override
+	@Override 
 	public void home() {
 		System.out.println("wild is under my kingdome 😎");
 	}
@@ -18,7 +18,7 @@ public class Lion extends CatFamily{
 	}
 
 	public void callMe() {
-		System.out.println("I am "+Animal.lion);
+		System.out.println("I am "+Animal.animals.lion);
 		family();
 		home();
 		food();

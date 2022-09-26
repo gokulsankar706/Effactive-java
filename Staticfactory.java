@@ -6,7 +6,7 @@ public class Staticfactory {
 	private int age;
 	private float height;
 	
-	private Staticfactory() {}
+	private Staticfactory() {} 
 	
 	private Staticfactory(String name, int age, float height) {
 		this.name = name;
@@ -35,7 +35,15 @@ public class Staticfactory {
 	public static Staticfactory setAge( float height) {
 		return new Staticfactory(height);
 	}
-
+	
+	public String getName() {
+		return name;
+	}
+	
+	public int getage() {
+		return age;
+	}
+	
 	@Override
 	public String toString() {
 		return ("Name : "+name+"\nAge :"+age+"\nHeight :"+height);
