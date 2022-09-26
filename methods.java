@@ -2,10 +2,12 @@
 package Cooks;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Optional;
 import java.util.Set;
+import java.util.TreeSet;
 
 public class methods{
 	
@@ -79,43 +81,12 @@ public class methods{
 		
 		//javaDoc("xyz ");
 		
-		methods m1 = new methods(1,2,"dfg");
-		methods m2 = new methods(3,2,"dfg");
-		Set<methods> set = new HashSet<>();
-		
-		set.add(m1);
-		set.add(m2);
-		
-		//System.out.println(m1.hashCode()+" "+m2.hashCode());
-		System.out.println(set);
-		if (m1.getStr().equals(m2.getStr())) {
-			//System.out.println("hello,.....");
-		}
-		else {
-			//System.out.println("false...");
-		}
+
 		
 	}
 	
 	
-	//Overriding equals and hashcode
-	@Override
-	public boolean equals(Object obj) {
-		methods m = (methods) obj;
-		if(this.k == m.k || m.hashCode() == this.hashCode())
-			return true;
-		
-		return false;
-		
-	}
 	
-	@Override
-	public int hashCode() {
-		int prime = 31;
-		int result= 1;
-		result *= prime + k;
-		return result;
-	}
 	
 	
 }
